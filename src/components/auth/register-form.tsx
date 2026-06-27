@@ -22,9 +22,9 @@ export function RegisterForm({ onSubmit, loading, error, className }: RegisterFo
     e.preventDefault();
     const form = e.target as HTMLFormElement;
     const data = {
-      name: (form.elements.nativeItem('name') as HTMLInputElement).value,
-      email: (form.elements.nativeItem('email') as HTMLInputElement).value,
-      password: (form.elements.nativeItem('password') as HTMLInputElement).value,
+      name: (form.elements.namedItem('name') as HTMLInputElement).value,
+      email: (form.elements.namedItem('email') as HTMLInputElement).value,
+      password: (form.elements.namedItem('password') as HTMLInputElement).value,
     };
     onSubmit?.(data);
   };

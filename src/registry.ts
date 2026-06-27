@@ -588,4 +588,4 @@ export function getComponentById(id: string): ComponentEntry | undefined {
   return componentRegistry.find((c) => c.id === id);
 }
 
-export type { UseCase, ComponentCategory } from "./registry";
+

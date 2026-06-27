@@ -7,8 +7,6 @@ import {
   AlertDialogCancel,
   AlertDialogContent,
   AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@radix-ui/react-alert-dialog";
@@ -48,13 +46,13 @@ export function ConfirmDialog({
     <AlertDialog open={open} onOpenChange={onOpenChange}>
       {trigger && <AlertDialogTrigger asChild>{trigger}</AlertDialogTrigger>}
       <AlertDialogContent className="fixed left-[50%] top-[50%] z-50 w-full max-w-md translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg sm:rounded-lg">
-        <AlertDialogHeader>
+        <div>
           <AlertDialogTitle className="text-lg font-semibold">{title}</AlertDialogTitle>
           <AlertDialogDescription className="text-sm text-muted-foreground">
             {description}
           </AlertDialogDescription>
-        </AlertDialogHeader>
-        <AlertDialogFooter className="flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2">
+        </div>
+        <div className="flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2">
           <AlertDialogCancel asChild>
             <Button variant="outline" disabled={loading}>
               {cancelLabel}
@@ -69,7 +67,7 @@ export function ConfirmDialog({
               {confirmLabel}
             </Button>
           </AlertDialogAction>
-        </AlertDialogFooter>
+        </div>
       </AlertDialogContent>
     </AlertDialog>
   );

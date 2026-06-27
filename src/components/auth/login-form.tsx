@@ -22,8 +22,8 @@ export function LoginForm({ onSubmit, loading, error, className }: LoginFormProp
     e.preventDefault();
     const form = e.target as HTMLFormElement;
     const data = {
-      email: (form.elements.nativeItem('email') as HTMLInputElement).value,
-      password: (form.elements.nativeItem('password') as HTMLInputElement).value,
+      email: (form.elements.namedItem('email') as HTMLInputElement).value,
+      password: (form.elements.namedItem('password') as HTMLInputElement).value,
     };
     onSubmit?.(data);
   };
