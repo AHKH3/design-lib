@@ -21,6 +21,7 @@ export * from "./components/ui/tooltip";
 export * from "./components/ui/skeleton";
 export * from "./components/ui/table";
 export * from "./components/ui/alert";
+export * from "./components/ui/progress";
 
 // Admin
 export * from "./components/admin/admin-layout";

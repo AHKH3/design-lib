@@ -188,6 +188,15 @@ export const componentRegistry: ComponentEntry[] = [
     dependencies: [],
   },
   {
+    id: "progress",
+    name: "Progress",
+    description: "Accessible progress bar with variants (default, success, warning), sizes, and optional label",
+    category: "ui",
+    useCases: ["all"],
+    isBase: true,
+    dependencies: [],
+  },
+  {
     id: "container",
     name: "Container",
     description: "Max-width content wrapper with responsive padding and size variants",
