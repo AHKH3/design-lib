@@ -224,6 +224,15 @@ export const componentRegistry: ComponentEntry[] = [
     dependencies: [],
   },
   {
+    id: "section",
+    name: "Section",
+    description: "Page section with consistent vertical padding, polymorphic \`as\` prop, and optional container wrapper",
+    category: "layout",
+    useCases: ["all"],
+    isBase: true,
+    dependencies: [],
+  },
+  {
     id: "flex",
     name: "Flex",
     description: "Inline flexbox wrapper for toolbars, button groups",
